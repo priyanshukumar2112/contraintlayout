@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="290sp"
+        android:layout_height="140sp"
+        android:id="@+id/tvview"
+        android:layout_margin="5sp"
+        android:background="@color/purple_700"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvview1"
+        />
+
+
+
+    <TextView
+        android:layout_width="140sp"
+        android:layout_height="90sp"
+        android:id="@+id/tvview1"
+        android:layout_margin="10sp"
+        android:background="@color/purple_500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvview"
+        app:layout_constraintEnd_toStartOf="@id/tvview2"
+        app:layout_constraintBottom_toTopOf="@id/tvview3"
+
+        />
+
+    <TextView
+        android:layout_width="140sp"
+        android:layout_height="90sp"
+        android:id="@+id/tvview2"
+        android:layout_margin="10sp"
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvview"
+        app:layout_constraintStart_toEndOf="@id/tvview1"
+        app:layout_constraintBottom_toTopOf="@id/tvview4"
+        />
+
+    <TextView
+        android:layout_width="140sp"
+        android:layout_height="90sp"
+        android:id="@+id/tvview3"
+        android:layout_margin="10sp"
+        android:background="@color/purple_200"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvview1"
+        app:layout_constraintEnd_toStartOf="@id/tvview4"
+        app:layout_constraintBottom_toTopOf="@+id/tvview5"
+        />
+    <TextView
+        android:layout_width="140sp"
+        android:layout_height="90sp"
+        android:id="@+id/tvview4"
+        android:layout_margin="10sp"
+        android:background="@color/purple_200"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvview2"
+        app:layout_constraintStart_toEndOf="@id/tvview3"
+        app:layout_constraintBottom_toTopOf="@id/tvview6"
+        />
+    <TextView
+        android:layout_width="140sp"
+        android:layout_height="90sp"
+        android:id="@+id/tvview5"
+        android:layout_margin="10sp"
+        android:background="@color/purple_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvview3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvview6"
+        />
+
+    <TextView
+        android:layout_width="140sp"
+        android:layout_height="90sp"
+        android:id="@+id/tvview6"
+        android:layout_margin="10sp"
+        android:background="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvview4"
+        app:layout_constraintStart_toEndOf="@id/tvview5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
